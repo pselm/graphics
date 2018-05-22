@@ -10,14 +10,12 @@ import Control.Monad.Eff.Exception (EXCEPTION)
 import Control.Monad.Eff.Console (CONSOLE)
 import Control.Monad.Eff.Now (NOW)
 import Control.Monad.Aff.AVar (AVAR)
-import Elm.Signal (DELAY)
 
 import DOM (DOM)
 import DOM.JSDOM (JSDOM)
 import Graphics.Canvas (CANVAS)
 
 import Test.Elm.TextTest as TextTest
-import Test.Elm.SignalTest as SignalTest
 import Test.Elm.Graphics.StaticElementTest as StaticElementTest
 
 import Prelude (Unit, discard)
@@ -31,7 +29,6 @@ main :: Eff
     , err :: EXCEPTION
     , console :: CONSOLE
     , ref :: REF
-    , delay :: DELAY
     , now :: NOW
     , canvas :: CANVAS
     , dom :: DOM
@@ -41,5 +38,4 @@ main :: Eff
 main =
     runTest do
         TextTest.tests
-        SignalTest.tests
         StaticElementTest.tests

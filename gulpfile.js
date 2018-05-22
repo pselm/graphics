@@ -58,44 +58,6 @@ var bundles = [{
     purs: "examples/Graphics/UpdateCollage.purs",
     html: "examples/Graphics/UpdateCollage.html"
 },{
-    module: "Examples.Keyboard.Console",
-    purs: "examples/Keyboard/Console.purs",
-    html: "examples/Keyboard/Console.html"
-},{
-    module: "Examples.Mouse.FullScreen",
-    purs: "examples/Mouse/FullScreen.purs",
-    html: "examples/Mouse/FullScreen.html"
-},{
-    module: "Examples.Mouse.Embed",
-    purs: "examples/Mouse/Embed.purs",
-    html: "examples/Mouse/Embed.html"
-},{
-    module: "Examples.Window.FullScreen",
-    purs: "examples/Window/FullScreen.purs",
-    html: "examples/Window/FullScreen.html"
-},{
-    module: "Examples.Window.Embed",
-    purs: "examples/Window/Embed.purs",
-    html: "examples/Window/Embed.html"
-},{
-    module: "Examples.Time.Delay",
-    purs: "examples/Time/Delay.purs"
-},{
-    module: "Examples.Time.Every",
-    purs: "examples/Time/Every.purs"
-},{
-    module: "Examples.Time.FPS",
-    purs: "examples/Time/FPS.purs"
-},{
-    module: "Examples.Time.FPSWhen",
-    purs: "examples/Time/FPSWhen.purs"
-},{
-    module: "Examples.Time.Since",
-    purs: "examples/Time/Since.purs"
-},{
-    module: "Examples.Time.Timestamp",
-    purs: "examples/Time/Timestamp.purs"
-},{
     module: "Test.Main",
     purs: "test/Test/Main.purs"
 }];
@@ -149,12 +111,7 @@ gulp.task("docs", ["make"], function () {
         docgen: {
             "DOM.Renderable": "docs/DOM/Renderable.md",
             "Elm.Graphics.Collage": "docs/Elm/Graphics/Collage.md",
-            "Elm.Graphics.Element": "docs/Elm/Graphics/Element.md",
-            "Elm.Keyboard": "docs/Elm/Keyboard.md",
-            "Elm.Mouse": "docs/Elm/Mouse.md",
-            "Elm.Signal": "docs/Elm/Signal.md",
-            "Elm.Text": "docs/Elm/Text.md",
-            "Elm.Window": "docs/Elm/Window.md"
+            "Elm.Graphics.Element": "docs/Elm/Graphics/Element.md"
         }
     });
 });

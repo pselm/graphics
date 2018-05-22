@@ -1,10 +1,10 @@
 {
-  "name": "purescript-elm",
-  "homepage": "https://github.com/rgrempel/purescript-elm",
+  "name": "purescript-pselm-graphics",
+  "homepage": "https://github.com/pselm/graphics",
   "authors": [
     "Ryan Rempel <rgrempel@gmail.com>"
   ],
-  "description": "Elm libraries in Purescript",
+  "description": "Purescript implementation of Elm 0.16's graphics modules",
   "license": "MIT",
   "keywords": [
     "purescript"
@@ -18,7 +18,6 @@
   "dependencies": {
     "purescript-canvas": "^3.0.0",
     "purescript-dom": "^4.0.0",
-    "purescript-exists": "^3.0.0",
     "purescript-format": "^3.0.0",
     "purescript-list-zipper": "soupi/purescript-list-zipper#^1.0.0",
     "purescript-prelude": "^3.0.0",
@@ -31,6 +30,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/rgrempel/purescript-elm.git"
+    "url": "git://github.com/pselm/graphics.git"
   }
 }
